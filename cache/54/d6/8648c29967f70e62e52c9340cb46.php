@@ -1,7 +1,7 @@
 <?php
 
-/* pages/test.tpl */
-class __TwigTemplate_1b9e9faa479f3c21d9bfa32752f93c1a extends Twig_Template
+/* pages/personal_greeting_prompt.tpl */
+class __TwigTemplate_54d68648c29967f70e62e52c9340cb46 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -30,30 +30,37 @@ class __TwigTemplate_1b9e9faa479f3c21d9bfa32752f93c1a extends Twig_Template
     // line 3
     public function block_id($context, array $blocks = array())
     {
-        echo "1";
+        echo "personal_greeting_prompt";
     }
 
     // line 5
     public function block_content($context, array $blocks = array())
     {
-        echo "2";
+        // line 6
+        echo "  <fieldset>
+    <div data-role=\"fieldcontain\">
+      <label for=\"name_input\">What is your name?</label>
+      <input type=\"text\" name=\"name\" id=\"name_input\" />
+    </div>
+    <button id=\"personal_greeting_button\" type=\"submit\" data-theme=\"b\" name=\"submit\" value=\"submit-value\">Submit</button>
+  </fieldset>
+";
     }
 
-    // line 7
+    // line 15
     public function block_greeting_tab_class($context, array $blocks = array())
     {
-        echo "3";
     }
 
-    // line 9
+    // line 17
     public function block_personal_greeting_tab_class($context, array $blocks = array())
     {
-        echo "4";
+        echo "ui-btn-active ui-state-persist";
     }
 
     public function getTemplateName()
     {
-        return "pages/test.tpl";
+        return "pages/personal_greeting_prompt.tpl";
     }
 
     public function isTraitable()
@@ -63,6 +70,6 @@ class __TwigTemplate_1b9e9faa479f3c21d9bfa32752f93c1a extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  47 => 9,  41 => 7,  35 => 5,  29 => 3,);
+        return array (  54 => 17,  49 => 15,  38 => 6,  35 => 5,  29 => 3,);
     }
 }
