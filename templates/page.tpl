@@ -21,6 +21,7 @@
       <div data-role="footer" data-position="fixed">
         <a href="http://christianvolunteering.org/HelloICCMServer/greeting.php" data-role="button" data-icon="home" class="{% block greeting_tab_class %}{% endblock %}">Greeting</a>
         <a href="http://christianvolunteering.org/HelloICCMServer/personal_greeting_prompt.php" data-role="button" data-icon="info" class="{% block personal_greeting_tab_class %}{% endblock %}">Personal Greeting</a>
+        <a href="http://christianvolunteering.org/HelloICCMServer/dynamic_greeting.php" data-role="button" data-icon="gear" class="{% block dynamic_greeting_tab_class %}{% endblock %}">Dynamic Greeting</a>
       </div>
     </div>
   </body>
